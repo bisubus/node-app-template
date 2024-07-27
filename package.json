@@ -1,0 +1,37 @@
+{
+  "name": "",
+  "version": "0.0.0",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "main": "",
+  "engines": {
+    "node": ">= 18"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node --import=tsx --import=./env.ts src/index.ts",
+    "dev": "node --import=tsx --import=./env.ts src/index.ts",
+    "dev:debug": "node --import=tsx --import=./env.ts --inspect-brk src/index.ts",
+    "dev:watch": "tsx watch --ignore !./src/**/* --clear-screen=false --import=./env.ts src/index.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "dependencies": {
+    "@dotenvx/dotenvx": "~1.6.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "~8.57.0",
+    "@types/eslint": "~8.56.11",
+    "@types/node": "~20.14.12",
+    "cross-env": "~7.0.3",
+    "eslint": "~8.57.0",
+    "eslint-config-prettier": "~9.1.0",
+    "eslint-plugin-prettier": "~5.2.1",
+    "globals": "~15.8.0",
+    "prettier": "~3.3.3",
+    "tsx": "~4.16.2",
+    "typescript": "~5.5.4",
+    "typescript-eslint": "~7.17.0"
+  }
+}
