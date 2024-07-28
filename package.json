@@ -16,7 +16,8 @@
     "dev:watch": "tsx watch --ignore !./src/**/* --clear-screen=false --import=./env.ts src/index.ts",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "test": "jest"
+    "test": "jest",
+    "init": "node scripts/init.js"
   },
   "dependencies": {
     "@dotenvx/dotenvx": "~1.6.4"
