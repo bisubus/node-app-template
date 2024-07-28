@@ -4,7 +4,7 @@ import dotenvx from '@dotenvx/dotenvx';
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 const allowedEnvs = ['development', 'production', 'test'];
-const nodeEnv = allowedEnvs.includes(process.env.NODE_ENV)
+const nodeEnv = allowedEnvs.includes(process.env.NODE_ENV!)
   ? process.env.NODE_ENV
   : 'development';
 
