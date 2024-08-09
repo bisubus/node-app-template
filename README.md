@@ -15,7 +15,7 @@ Requires Node.js 18+.
 ```sh
 git clone https://github.com/bisubus/node-app-template
 cd node-app-template
-npm run init --author=my-name --package=my-package
+npm run init -- --author=my-name --package=my-package
 npm i
 ```
 
