@@ -16,6 +16,8 @@ Requires Node.js 18+.
 git clone https://github.com/bisubus/node-app-template
 cd node-app-template
 npm run init -- --author=my-name --package=my-package
+git add -u
+git commit -m "Init template"
 npm i
 ```
 
